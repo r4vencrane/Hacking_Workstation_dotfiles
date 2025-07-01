@@ -1,6 +1,6 @@
 format = """
-[](bg:#061115 fg:#78FF00)\
-[   ](bg:#78FF00 fg:#061115)\
+[](bg:#000000 fg:#78FF00)\
+[   ](bg:#78FF00 fg:#000000 bold)\
 [](fg:#78FF00 bg:#013756)\
 $time\
 [](fg:#013756 bg:#78FF00)\
@@ -9,8 +9,8 @@ $directory\
 $git_branch\
 $git_status\
 $git_metrics\
-[](fg:#013756 bg:#061115)\
-$character
+[](fg:#013756 bg:#000000)\
+\n$character
 """
 
 right_format = """
@@ -20,12 +20,12 @@ $python
 [time]
 disabled = false
 time_format = "%R"
-style = "bg:#013756 fg:#78FF00"
+style = "bg:#013756 fg:#ffffff"
 format = '[ 󱑓 $time ]($style)'
 
 [directory]
 format = "[  $path ]($style)"
-style = "bg:#78FF00 fg:#013756"
+style = "bg:#78FF00 fg:#000000 bold "
 truncation_length = 3
 
 [git_branch]
